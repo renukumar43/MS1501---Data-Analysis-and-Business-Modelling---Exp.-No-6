@@ -67,7 +67,7 @@ print("Total transactions:", len(transactions))
 for transaction_id, items in enumerate(transactions, start=1):  
     print(f"T{transaction_id}: {', '.join(items)}")  
 
-    # 3. Convert transactions into a one-hot encoded binary DataFrame
+ # 3. Convert transactions into a one-hot encoded binary DataFrame
 encoder = TransactionEncoder()  
 encoded_array = encoder.fit(transactions).transform(transactions)  
 
