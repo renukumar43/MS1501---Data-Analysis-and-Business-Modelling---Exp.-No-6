@@ -105,7 +105,7 @@ if not rules.empty:
 else:
     print("No association rules were generated for the selected thresholds.")  
 
-    # 6. Filter strong rules: confidence > 0.6 and lift > 1
+ # 6. Filter strong rules: confidence > 0.6 and lift > 1
 strong_rules = rules[
     (rules["confidence"] > 0.6) &
     (rules["lift"] > 1)
